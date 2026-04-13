@@ -1,0 +1,17 @@
+{
+  "description": "Navigate to the profile / account menu",
+  "steps": [
+    {"action": "launch"},
+    {"action": "wait", "seconds": 3},
+    {"action": "screenshot", "label": "home_screen"},
+    {"action": "press", "button": "up"},
+    {"action": "wait", "seconds": 0.5},
+    {"action": "press", "button": "right"},
+    {"action": "wait", "seconds": 0.5},
+    {"action": "press", "button": "right"},
+    {"action": "wait", "seconds": 0.5},
+    {"action": "press", "button": "select"},
+    {"action": "wait", "seconds": 2},
+    {"action": "screenshot", "label": "profile_menu_opened"}
+  ]
+}

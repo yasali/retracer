@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retracer"
+version = "0.1.0"
+description = "Platform-agnostic UI bug reproduction and triage tool"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+dependencies = [
+    "pydantic>=2.0",
+    "click>=8.0",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+scoring = ["Pillow>=10.0"]
+ocr = ["pytesseract>=0.3"]
+llm = ["openai>=1.0"]
+dev = ["pytest>=7.0", "pytest-cov>=4.0", "ruff>=0.4"]
+
+[project.scripts]
+retracer = "retracer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["retracer*"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

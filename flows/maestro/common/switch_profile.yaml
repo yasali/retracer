@@ -1,0 +1,23 @@
+# Switch between user profiles
+appId: ${APP_ID}
+
+---
+- launchApp
+
+- extendedWaitUntil:
+    visible: ".*"
+    timeout: 5000
+
+- tapOn:
+    text: "Profile"
+    optional: true
+
+- tapOn:
+    text: "Switch Profile"
+    optional: true
+
+- tapOn:
+    text: "Switch"
+    optional: true
+
+- takeScreenshot: profile_switched

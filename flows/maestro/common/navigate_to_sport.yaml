@@ -1,0 +1,19 @@
+# Navigate to the sport / sports section
+appId: ${APP_ID}
+
+---
+- launchApp
+
+- extendedWaitUntil:
+    visible: ".*"
+    timeout: 5000
+
+- tapOn:
+    text: "Sport"
+    optional: true
+
+- tapOn:
+    text: "Sports"
+    optional: true
+
+- takeScreenshot: sport_home

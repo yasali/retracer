@@ -1,0 +1,19 @@
+# Trigger various modal / overlay states
+appId: ${APP_ID}
+
+---
+- launchApp
+
+- extendedWaitUntil:
+    visible: ".*"
+    timeout: 5000
+
+- tapOn:
+    text: "Menu"
+    optional: true
+
+- tapOn:
+    text: "Settings"
+    optional: true
+
+- takeScreenshot: modal_state

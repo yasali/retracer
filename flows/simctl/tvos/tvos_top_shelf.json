@@ -1,0 +1,14 @@
+{
+  "description": "Navigate to tvOS top shelf area",
+  "steps": [
+    {"action": "launch"},
+    {"action": "wait", "seconds": 3},
+    {"action": "press", "button": "up"},
+    {"action": "wait", "seconds": 0.5},
+    {"action": "press", "button": "up"},
+    {"action": "wait", "seconds": 0.5},
+    {"action": "press", "button": "select"},
+    {"action": "wait", "seconds": 2},
+    {"action": "screenshot", "label": "top_shelf"}
+  ]
+}

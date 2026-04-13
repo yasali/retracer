@@ -1,0 +1,8 @@
+{
+  "name": "sports_family_account",
+  "username": "test_family_sports@example.com",
+  "password": "REPLACE_WITH_REAL_PASSWORD",
+  "region": "SE",
+  "notes": "Family account with sports package. Do NOT commit real credentials.",
+  "tags": ["family", "sports", "premium"]
+}

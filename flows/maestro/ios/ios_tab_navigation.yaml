@@ -1,0 +1,23 @@
+# iOS tab bar navigation
+appId: ${APP_ID}
+
+---
+- launchApp
+
+- extendedWaitUntil:
+    visible: ".*"
+    timeout: 5000
+
+- tapOn:
+    text: "Home"
+    optional: true
+
+- tapOn:
+    text: "Search"
+    optional: true
+
+- tapOn:
+    text: "Home"
+    optional: true
+
+- takeScreenshot: tab_navigation

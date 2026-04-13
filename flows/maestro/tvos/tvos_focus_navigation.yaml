@@ -1,0 +1,17 @@
+# tvOS focus-based navigation test
+# Simulates D-pad / remote navigation for focus-state bugs
+appId: ${APP_ID}
+
+---
+- launchApp
+
+- extendedWaitUntil:
+    visible: ".*"
+    timeout: 5000
+
+- pressKey: down
+- pressKey: down
+- pressKey: right
+- pressKey: select
+
+- takeScreenshot: focus_navigation

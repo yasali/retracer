@@ -1,0 +1,15 @@
+# iOS pull-to-refresh interaction
+appId: ${APP_ID}
+
+---
+- launchApp
+
+- extendedWaitUntil:
+    visible: ".*"
+    timeout: 5000
+
+- swipe:
+    direction: DOWN
+    duration: 500
+
+- takeScreenshot: pull_to_refresh

@@ -1,0 +1,19 @@
+{
+  "description": "Switch between user profiles",
+  "steps": [
+    {"action": "launch"},
+    {"action": "wait", "seconds": 3},
+    {"action": "press", "button": "up"},
+    {"action": "wait", "seconds": 0.5},
+    {"action": "press", "button": "right"},
+    {"action": "wait", "seconds": 0.5},
+    {"action": "press", "button": "select"},
+    {"action": "wait", "seconds": 2},
+    {"action": "screenshot", "label": "profile_area"},
+    {"action": "press", "button": "down"},
+    {"action": "wait", "seconds": 0.5},
+    {"action": "press", "button": "select"},
+    {"action": "wait", "seconds": 2},
+    {"action": "screenshot", "label": "profile_switched"}
+  ]
+}

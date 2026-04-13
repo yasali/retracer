@@ -1,0 +1,11 @@
+# Launch or foreground the app
+# This is a warm-up flow that ensures the app is in a known state.
+# Env vars: APP_ID (optional bundle identifier)
+appId: ${APP_ID}
+
+---
+- launchApp
+
+- assertVisible:
+    text: ".*"
+    optional: true

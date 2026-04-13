@@ -1,0 +1,23 @@
+# Navigate to the profile / account menu
+# Tests basic navigation to the user settings area.
+# Useful for reproducing profile overlay and menu bugs.
+appId: ${APP_ID}
+
+---
+- launchApp
+
+# Wait for app to settle
+- extendedWaitUntil:
+    visible: ".*"
+    timeout: 5000
+
+# Attempt to tap profile/account icon (adapt selector to your app)
+- tapOn:
+    text: "Profile"
+    optional: true
+
+- tapOn:
+    text: "Account"
+    optional: true
+
+- takeScreenshot: profile_menu_opened

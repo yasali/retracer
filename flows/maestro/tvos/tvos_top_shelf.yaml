@@ -1,0 +1,15 @@
+# tvOS top shelf interaction
+appId: ${APP_ID}
+
+---
+- launchApp
+
+- extendedWaitUntil:
+    visible: ".*"
+    timeout: 5000
+
+- pressKey: up
+- pressKey: up
+- pressKey: select
+
+- takeScreenshot: top_shelf

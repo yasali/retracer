@@ -1,0 +1,8 @@
+{
+  "description": "Launch the app and take a screenshot",
+  "steps": [
+    {"action": "launch"},
+    {"action": "wait", "seconds": 3},
+    {"action": "screenshot", "label": "after_launch"}
+  ]
+}

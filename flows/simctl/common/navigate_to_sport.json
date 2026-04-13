@@ -1,0 +1,12 @@
+{
+  "description": "Navigate to the sport section",
+  "steps": [
+    {"action": "launch"},
+    {"action": "wait", "seconds": 3},
+    {"action": "press", "button": "down"},
+    {"action": "wait", "seconds": 0.5},
+    {"action": "press", "button": "select"},
+    {"action": "wait", "seconds": 2},
+    {"action": "screenshot", "label": "sport_section"}
+  ]
+}
